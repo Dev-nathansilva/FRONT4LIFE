@@ -310,15 +310,27 @@ export default function Perguntas({ onFinalizar }) {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-6">
-            {perguntaAtual.opcoes.map((opcao, index) => (
-              <button
-                key={index}
-                onClick={() => selecionarOpcao(opcao.value)}
-                className="text-center cursor-pointer bg-white hover:bg-blue-500 hover:text-white border border-gray-300 p-5 rounded-lg transition"
-              >
-                {opcao.label}
-              </button>
-            ))}
+            {perguntaAtual.opcoes.map((opcao, index) => {
+              const selecionada = respostas[perguntaAtual.id] === opcao.value;
+
+              return (
+                <button
+                  key={index}
+                  onClick={(e) => {
+                    e.currentTarget.blur(); // remove o foco visual
+                    selecionarOpcao(opcao.value);
+                  }}
+                  className={`text-center cursor-pointer border border-gray-300 p-5 rounded-lg transition 
+        ${
+          selecionada
+            ? "bg-blue-500 text-white"
+            : "bg-white hover:bg-blue-500 hover:text-white active:bg-blue-500 active:text-white focus:bg-blue-500 focus:text-white"
+        }`}
+                >
+                  {opcao.label}
+                </button>
+              );
+            })}
           </div>
 
           <div className="mb-4">
