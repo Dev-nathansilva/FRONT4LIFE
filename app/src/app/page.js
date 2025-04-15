@@ -25,8 +25,8 @@ export default function Home() {
               <Image
                 src="/logo-completa-colorido.png"
                 alt="Logo"
-                width={200}
-                height={200}
+                width={198}
+                height={198}
                 className="mb-6"
               />
               <h1 className="text-3xl font-bold mb-4 text-white leading-[40px] w-[300px]">
