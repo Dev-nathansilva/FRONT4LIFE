@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .banner-home {
-  background: url(../../public/banner-inicio.jpg);
+  background: url(../../public/banner-atualizado.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
