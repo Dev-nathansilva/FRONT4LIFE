@@ -296,7 +296,7 @@ export default function Perguntas({ onFinalizar }) {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="max-w-5xl mx-auto px-4 py-8 h-screen flex flex-col justify-center">
+      <div className="max-w-5xl mx-auto px-4 py-8 h-screen flex flex-col sm:justify-center">
         <h1 className="text-4xl font-bold text-center mb-6 py-3 bg-gradient-to-r from-black to-blue-500 text-transparent bg-clip-text">
           Avaliação de Perfil Comportamental
         </h1>
@@ -355,7 +355,7 @@ export default function Perguntas({ onFinalizar }) {
             alt="Logo"
             width={80}
             height={80}
-            className="mx-auto"
+            className="mx-auto mb-20"
           />
         </footer>
       </div>

@@ -241,7 +241,7 @@ export default function FormularioFinal({ resultado }) {
 
     return (
       <div className="min-h-screen max-w-screen flex items-center text-center flex-col overflow-hidden">
-        <div className="bg-[#002779] h-[250px] w-full flex flex-col items-center pt-6">
+        <div className="bg-[#002779] h-[350px] sm:h-[250px] w-full flex flex-col items-center pt-6">
           <Image
             src="/logo-completa-colorido.png"
             alt="Logo"
@@ -249,14 +249,14 @@ export default function FormularioFinal({ resultado }) {
             height={120}
             className="mx-auto"
           />
-          <h2 className="text-4xl font-bold text-center py-3 bg-gradient-to-r from-white to-blue-300 text-transparent bg-clip-text">
+          <h2 className="text-[30px] sm:text-4xl font-bold text-center py-3 bg-gradient-to-r from-white to-blue-300 text-transparent bg-clip-text">
             Avaliação de Perfil Comportamental
           </h2>
           <p className="text-x text-gray-300">
             Confira abaixo o resultado da sua avaliação comportamental
           </p>
         </div>
-        <div className="mt-[-50px] bg-gray-50 shadow border border-gray-300 p-6 rounded-[20px] w-full max-w-2xl space-y-2">
+        <div className="mt-[-60px] sm:mt-[-50px] bg-gray-50 shadow border border-gray-300 p-6 rounded-[20px] w-[350px] sm:w-full sm:max-w-2xl space-y-2">
           <p className="text-lg text-gray-800 mb-2">
             {predominantes.length > 1
               ? "Seus perfis predominantes são:"
@@ -303,7 +303,7 @@ export default function FormularioFinal({ resultado }) {
             return (
               <div
                 key={perfil.letra}
-                className="bg-gray-100 border border-gray-300 rounded-4xl p-7 text-left mt-6 w-[400px] mb-20 relative"
+                className="bg-gray-100 border border-gray-300 rounded-4xl p-7 text-left mt-6 w-[360px] sm:w-[400px] mb-20 relative"
               >
                 <Image
                   src={`/${perfil.imagem}`}
